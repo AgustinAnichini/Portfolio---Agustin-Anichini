@@ -34,6 +34,8 @@
 .contenedor-img img {
   width: 55%;
   height: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2), 0px -4px 10px rgba(0, 0, 0, 0.2),
+    4px 0px 10px rgba(0, 0, 0, 0.2), -4px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .contenedor-img p {
@@ -75,13 +77,15 @@
 .contenedor-info {
   display: grid;
   grid-template-columns: 4fr 4fr;
-  gap: 11rem;
+  gap: 5rem;
   margin: 3rem 8rem;
 }
 
 .encabezado {
   text-align: start;
   font-size: xxx-large;
+  border-bottom: solid 2px var(--color-detalles);
+  width: fit-content;
 }
 
 .contenido-colum {
@@ -122,17 +126,27 @@
   list-style: none;
   font-size: large;
   padding: 0.3rem;
+  margin-top: 0.5rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
 }
 
-.items span {
-  color: var(--color-detalles);
+.items img{
+  color: var(--color-principal);
+  background-color: black;
+  /* width: 12%; */
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .habilidades-colum {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: 4fr 2fr;
+  grid-template-columns: 2fr 2fr;
 }
+
 
 .red {
   display: flex;
@@ -168,4 +182,127 @@
   position: absolute;
   right: 20px;
   top: 60px;
+}
+
+.heading {
+  text-align: center;
+  font-size: xx-large;
+  margin: 2rem 0rem;
+}
+
+.headingFoot {
+  font-size: 3rem;
+  text-align: center;
+  width: max-content;
+  margin-bottom: 2rem;
+}
+
+.contendor-foot {
+  width: 40%;
+  text-align: -webkit-center;
+}
+
+.frase-foot {
+  display: inline-block;
+  margin-top: 2.5rem;
+  width: 100%;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.text-foot {
+  width: 70%;
+  font-size: small;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+
+.formContacto {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group input {
+  padding: 0.2rem;
+  border: none;
+  border-bottom: solid 1px var(--color-detalles);
+  width: 250px;
+}
+
+.input-group input::placeholder {
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.input-group-2 textarea::placeholder {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.btn {
+  background-color: transparent;
+  border: solid 2px black;
+  color: black;
+  width: 50%;
+  padding: 0.3rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn:hover {
+  background-color: var(--color-detalles);
+}
+
+.contacto {
+  background-color: var(--color-principal);
+  display: flex;
+  align-items: center;
+  padding: 5rem 0rem;
+}
+
+.contacto form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contacto form .input-box input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--main-color);
+  background: var(--second-bg-color);
+  border-bottom: 2px solid black;
+  margin: 1.5rem 0;
+  resize: none;
+}
+
+.contacto form textarea {
+  width: 350px;
+  height: 350px;
+  border: solid 2px black;
+  padding: 1rem;
+  margin: 1.5rem 2rem 1.5rem 0rem;
+}
+
+.contacto form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+.contenedor-section {
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2), 0px -4px 10px rgba(0, 0, 0, 0.2),
+    4px 0px 10px rgba(0, 0, 0, 0.2), -4px 0px 10px rgba(0, 0, 0, 0.2); */
+  padding: 2rem;
+  width: 100%;
 }

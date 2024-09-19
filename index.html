@@ -53,6 +53,8 @@
 
     <section class="contenedor-info container">
       <div class="colum-educacion">
+
+        <div class="contenedor-section">
         <h1 class="encabezado">Educación</h1>
 
         <div class="contenido-colum">
@@ -88,7 +90,10 @@
           </div>
         </div>
 
-        <h1 class="encabezado" style="margin-top: 2rem">Cursos</h1>
+      </div>
+
+      <div class="contenedor-section" style="margin-top: 3rem">
+        <h1 class="encabezado">Cursos</h1>
 
         <div class="contenido-colum">
           <div class="tiempo">
@@ -106,8 +111,10 @@
             </p>
           </div>
         </div>
+      </div>
 
-        <h1 class="encabezado" style="margin-top: 2rem">Idiomas</h1>
+      <div class="contenedor-section" style="margin-top: 3rem">
+        <h1 class="encabezado">Idiomas</h1>
 
         <div class="contenido-colum">
           <div class="tiempo">
@@ -126,8 +133,10 @@
           </div>
         </div>
       </div>
+      </div>
 
       <div class="colum-experiencias">
+        <div class="contenedor-section">
         <h1 class="encabezado">Experiencia</h1>
 
         <div class="contenido-colum">
@@ -178,47 +187,80 @@
             </p>
           </div>
         </div>
+      </div>
 
-        <h1 class="encabezado" style="margin-top: 2rem;">Habilidades</h1>
+      <div class="contenedor-section" style="margin-top: 2rem;">
+        <h1 class="encabezado">Habilidades</h1>
 
         <div class="habilidades-colum">
           <div class="tiempo">
             <ul class="items">
-              <li><span>-</span> HTML5</li>
-              <li><span>-</span> CSS3</li>
-              <li><span>-</span> JavaScript</li>
-              <li><span>-</span> Java</li>
-              <li><span>-</span> Spring MVC</li>
+              <li><img src="img/html.svg" alt=""><p>Gimnasio</p></li>
+              <li><img src="img/css.svg" alt=""><p>Css</p></li>
+              <li><img src="img/js.svg" alt=""><p>Javascript</p></li>
+              <li><img src="img/java.svg" alt=""><p>Java</p></li>
+              <li><img src="img/spring.svg" alt=""><p>Spring boot</p></li>
             </ul>
           </div>
 
           <div>
             <ul class="items">
-              <li><span>-</span> Thymeleaft</li>
-              <li><span>-</span> php MVC</li>
-              <li><span>-</span> UX/UI</li>
-              <li><span>-</span> Base de datos</li>
-              <li><span>-</span> Testing - TDD</li>
+              <li><img src="img/thymeleaf.svg" alt=""><p>Thymeleaf</p></li>
+              <li><img src="img/php.svg" alt=""><p>php</p></li>
+              <li><img src="img/uxui.svg" alt=""><p>UX/UI</p></li>
+              <li><img src="img/database.svg"><p>Base de datos</p></li>
+              <li><img src="img/code.svg"><p>Testing - TDD</p></li>
             </ul>
           </div>
         </div>
+      </div>
 
-        <h1 class="encabezado" style="margin-top: 2rem;">Hobbies</h1>
+      <div class="contenedor-section" style="margin-top: 2rem;">
+        <h1 class="encabezado">Hobbies</h1>
 
         <div class="habilidades-colum">
           <div class="tiempo">
             <ul class="items">
-              <li><span>-</span> Gimnasio</li>
-              <li><span>-</span> Fútbol</li>
-              <li><span>-</span> Fotografía</li>
-              <li><span>-</span> Actividades recreativas</li>
-              <li><span>-</span> Spring MVC</li>
+              <li><img src="img/gym.svg" alt=""><p>Gimnasio</p></li>
+              <li><img src="img/futbol.svg" alt=""><p>Futbol</p></li>
+              <li><img src="img/camera.svg" alt=""><p>Fotografía</p></li>
+              <li><img src="img/natural.svg" alt=""><p>Actividades recreativas</p></li>
             </ul>
           </div>
       </div>
+    </div>
     </section>
 
-    <div class="contenedor-redes">
+    <section class="contacto" id="contacto">
+      <div class="contendor-foot">
+        <h2 class="headingFoot">Innovemos <span>juntos</span></h2>
+        <p class="text-foot">Vamos a convertir tus ideas en soluciones digitales eficientes y atractivas. Ya sea que busques mejorar tu presencia en línea, optimizar procesos o crear algo completamente nuevo, estaré encantado de acompañarte en cada paso del camino.</p>
+        <span class="frase-foot">¡Hablemos sobre cómo podemos innovar juntos y llevar tu proyecto al siguiente nivel!</span>
+      </div>
+
+      <form action="sendEmail.php" class="formContacto" id="contactForm" style="width: 60%;">
+          <div class="input-group">
+              <div class="input-box">
+                  <input type="text" name="name" placeholder="Nombre completo" required>
+                  <input type="email" name="email" placeholder="Email" required>
+              </div>
+              
+              <div class="input-box">
+                  <input type="tel" name="phone" placeholder="Numero de telefono">
+                  <input type="text" name="agenda" placeholder="Agendame como">
+              </div>
+          </div>
+          <div class="input-group-2">
+              <textarea name="consulta" id="consulta" cols="30" rows="12" placeholder="Como quieres comenzar" required></textarea>
+              <input type="submit" value="Enviar" class="btn">
+          </div>
+      </form>
+      
+      <div id="loadingSpinner" class="loading-spinner" style="display: none;"></div>
+      <div id="responseMessage" class="message-box"></div>
+    </section>
+
+    <footer class="contenedor-redes">
       <div class="red">
         <img src="img/linkedin.svg" alt="">
         <a href="https://www.linkedin.com/in/agustinanichini/"
@@ -230,7 +272,8 @@
         <a href="https://github.com/AgustinAnichini"
         target="_blank"><p>https://github.com/AgustinAnichini</p></a>
       </div>
-    </div>
-
+    </footer>
   </body>
+  <script src="/js/email.js"></script>
+  <script src="js/observer.js"></script>
 </html>
