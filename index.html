@@ -11,8 +11,8 @@
     <section>
       <div class="contenedor-datos">
         <div class="contenedor-img">
-          <img src="img/CV-IMG-2.JPG" alt="" />
-          <p>
+          <img src="img/CV-IMG-2.JPG" alt="" class="izquierda" />
+          <p class="derecha">
             Soy un desarrollador web enfocado en crear soluciones innovadoras
             que mezclan creatividad y eficiencia. Me especializo en el diseño y
             desarrollo de sitios web adaptados a las necesidades de pequeñas y
@@ -22,12 +22,12 @@
           </p>
         </div>
 
-        <div class="frase">
+        <div class="frase arriba">
           <p style="font-style: italic;">"Creando soluciones web que combinan innovación y estrategia para potenciar tu presencia digital."</p>
         </div>
 
         <div class="nombre">
-          <h1>
+          <h1 class="izquierda">
             Hola Soy, <br />
             Agustin Anichini
           </h1>
@@ -36,14 +36,18 @@
             <a
               href="https://www.linkedin.com/in/agustinanichini/"
               target="_blank"
+              class="redesOb"
               ><img src="img/linkedin.svg" alt=""
             /></a>
-            <a href="https://www.github.com/AgustinAnichini" target="_blank"
+            <a href="https://www.github.com/AgustinAnichini" 
+              target="_blank" 
+              class="redesOb1"
               ><img src="img/github.svg" alt=""
             /></a>
             <a
               href="https://www.instagram.com/agussanichi_?igsh=aGgzZXBrcmlldmIz"
               target="_blank"
+              class="redesOb2"
               ><img src="img/instagram.svg" alt=""
             /></a>
           </div>
@@ -53,9 +57,13 @@
 
     <section class="contenedor-info container">
       <div class="colum-educacion">
-
         <div class="contenedor-section">
-        <h1 class="encabezado">Educación</h1>
+          <div class="contenedor-encabezado">
+            <div class="cuadrado">
+              <div class="cuadrado-black"></div>
+            </div>
+            <h1 class="encabezado">Educación</h1>
+          </div>
 
         <div class="contenido-colum">
           <div class="tiempo">
@@ -89,11 +97,30 @@
             </p>
           </div>
         </div>
-
       </div>
 
       <div class="contenedor-section" style="margin-top: 3rem">
-        <h1 class="encabezado">Cursos</h1>
+        <div class="contenedor-encabezado">
+          <div class="cuadrado">
+            <div class="cuadrado-black"></div>
+          </div>
+          <h1 class="encabezado">Cursos</h1>
+        </div>
+        <div class="contenido-colum">
+          <div class="tiempo">
+            <h1><span>Actulidad</span></h1>
+          </div>
+
+          <div>
+            <h1 class="puesto">Curso de React js</h1>
+            <h2 class="lugar">Udemy</h2>
+            <p class="descripcion">
+              En este curso estoy aprendiendo a crear proyectos reales con React, 
+              incluyendo el uso de state, hooks, estado global, componentes, y APIs. 
+              utilicé TypeScript desde el comienzo para cada proyecto.
+            </p>
+          </div>
+        </div>
 
         <div class="contenido-colum">
           <div class="tiempo">
@@ -114,8 +141,12 @@
       </div>
 
       <div class="contenedor-section" style="margin-top: 3rem">
-        <h1 class="encabezado">Idiomas</h1>
-
+        <div class="contenedor-encabezado">
+          <div class="cuadrado">
+            <div class="cuadrado-black"></div>
+          </div>
+          <h1 class="encabezado">Idiomas</h1>
+        </div>
         <div class="contenido-colum">
           <div class="tiempo">
             <h1><span>Actulidad</span></h1>
@@ -137,7 +168,12 @@
 
       <div class="colum-experiencias">
         <div class="contenedor-section">
-        <h1 class="encabezado">Experiencia</h1>
+          <div class="contenedor-encabezado">
+            <div class="cuadrado">
+              <div class="cuadrado-black"></div>
+            </div>
+            <h1 class="encabezado">Experiencia</h1>
+          </div>
 
         <div class="contenido-colum">
           <div class="tiempo">
@@ -190,34 +226,12 @@
       </div>
 
       <div class="contenedor-section" style="margin-top: 2rem;">
-        <h1 class="encabezado">Habilidades</h1>
-
-        <div class="habilidades-colum">
-          <div class="tiempo">
-            <ul class="items">
-              <li><img src="img/html.svg" alt=""><p>Gimnasio</p></li>
-              <li><img src="img/css.svg" alt=""><p>Css</p></li>
-              <li><img src="img/js.svg" alt=""><p>Javascript</p></li>
-              <li><img src="img/java.svg" alt=""><p>Java</p></li>
-              <li><img src="img/spring.svg" alt=""><p>Spring boot</p></li>
-            </ul>
+        <div class="contenedor-encabezado">
+          <div class="cuadrado">
+            <div class="cuadrado-black"></div>
           </div>
-
-          <div>
-            <ul class="items">
-              <li><img src="img/thymeleaf.svg" alt=""><p>Thymeleaf</p></li>
-              <li><img src="img/php.svg" alt=""><p>php</p></li>
-              <li><img src="img/uxui.svg" alt=""><p>UX/UI</p></li>
-              <li><img src="img/database.svg"><p>Base de datos</p></li>
-              <li><img src="img/code.svg"><p>Testing - TDD</p></li>
-            </ul>
-          </div>
+          <h1 class="encabezado">Hobbies</h1>
         </div>
-      </div>
-
-      <div class="contenedor-section" style="margin-top: 2rem;">
-        <h1 class="encabezado">Hobbies</h1>
-
         <div class="habilidades-colum">
           <div class="tiempo">
             <ul class="items">
@@ -236,23 +250,112 @@
     </div>
     </section>
 
+    <div id="carousel" class="slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="/img/html5.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slideCss">
+          <img class="ccsImg" src="/img/css3.png" alt="" />
+        </div>
+        <div class="slideCss">
+          <img class="ccsImg" src="/img/boostrap.png" alt="" />
+        </div>
+        <div class="slideCss">
+          <img class="ccsImg" src="/img/tailwind.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/js.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/java.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/php.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/spring.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/React.webp" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/vite.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/typescript.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img
+            src="/img/thymeleaf.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+
+        <!-- para que se repita -->
+        <div class="slide">
+          <img src="/img/html5.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slideCss">
+          <img class="ccsImg" src="/img/css3.png" alt="" />
+        </div>
+        <div class="slideCss">
+          <img class="ccsImg" src="/img/boostrap.png" alt="" />
+        </div>
+        <div class="slideCss">
+          <img class="ccsImg" src="/img/tailwind.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/js.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/java.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/php.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/spring.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/React.webp" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/vite.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/typescript.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img
+            src="/img/thymeleaf.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
     <section class="contacto" id="contacto">
-      <div class="contendor-foot">
+      <div class="contendor-foot izquierda">
         <h2 class="headingFoot">Innovemos <span>juntos</span></h2>
         <p class="text-foot">Vamos a convertir tus ideas en soluciones digitales eficientes y atractivas. Ya sea que busques mejorar tu presencia en línea, optimizar procesos o crear algo completamente nuevo, estaré encantado de acompañarte en cada paso del camino.</p>
         <span class="frase-foot">¡Hablemos sobre cómo podemos innovar juntos y llevar tu proyecto al siguiente nivel!</span>
       </div>
 
-      <form action="sendEmail.php" class="formContacto" id="contactForm" style="width: 60%;">
+      <form action="sendEmail.php" class="formContacto arriba" id="contactForm" style="width: 60%;">
           <div class="input-group">
               <div class="input-box">
-                  <input type="text" name="name" placeholder="Nombre completo" required>
-                  <input type="email" name="email" placeholder="Email" required>
+                  <input type="text" name="name" placeholder="Nombre completo" required class="inputOb">
+                  <input type="email" name="email" placeholder="Email" required class="inputOb1">
               </div>
               
               <div class="input-box">
-                  <input type="tel" name="phone" placeholder="Numero de telefono">
-                  <input type="text" name="agenda" placeholder="Agendame como">
+                  <input type="tel" name="phone" placeholder="Numero de telefono" class="inputOb2">
+                  <input type="text" name="agenda" placeholder="Agendame como" class="inputOb3">
               </div>
           </div>
           <div class="input-group-2">
@@ -266,16 +369,16 @@
     </section>
 
     <footer class="contenedor-redes">
-      <div class="red">
+      <div class="red izquierda">
         <img src="img/linkedin.svg" alt="">
         <a href="https://www.linkedin.com/in/agustinanichini/"
         target="_blank"><p>https://www.linkedin.com/in/agustinanichini/</p></a>
       </div>
 
-      <div class="red">
+      <div class="red derecha">
         <img src="img/github.svg" alt="">
         <a href="https://github.com/AgustinAnichini"
-        target="_blank"><p>https://github.com/AgustinAnichini</p></a>
+        target="_blank" ><p>https://github.com/AgustinAnichini</p></a>
       </div>
     </footer>
   </body>
