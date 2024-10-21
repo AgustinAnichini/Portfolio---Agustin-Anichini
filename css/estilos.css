@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* font-family: "Poppins", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+/* font-family: "Alfa Slab One", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
   padding: 0;
@@ -16,7 +20,8 @@
   background-color: var(--color-principal);
   margin-top: 10rem;
   width: 100%;
-  height: 600px;
+  height: max-content;
+  border-top: solid 2px black;
 }
 
 .contenedor-img {
@@ -55,7 +60,9 @@
 
 .nombre h1 {
   padding-top: 20rem;
-  font-size: 5.5rem;
+  font-size: 5rem;
+  /* font-family: "Alfa Slab One", serif; */
+  font-family: "Raleway", sans-serif;
 }
 
 .redes {
@@ -78,13 +85,15 @@
   display: grid;
   grid-template-columns: 4fr 4fr;
   gap: 5rem;
-  margin: 3rem 8rem;
+  padding: 8rem 8rem;
+  background-color: cornsilk;
 }
 
 .encabezado {
   text-align: start;
   font-size: xxx-large;
   width: fit-content;
+  font-family: "Raleway", sans-serif;
 }
 
 .contenido-colum {
@@ -99,12 +108,15 @@
 
 .puesto {
   margin-bottom: 0.2rem;
+  font-size: 1.3rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .lugar {
   color: var(--color-detalles);
   font-size: medium;
   margin-bottom: 0.3rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .descripcion {
@@ -115,6 +127,7 @@
 
 .tiempo h1 {
   font-size: 1.3rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .items {
@@ -139,6 +152,11 @@
   margin-right: 0.5rem;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), 0px 3px 5px rgba(0, 0, 0, 0.2),
     3px 0px 5px rgba(0, 0, 0, 0.2), 3px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.items p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 
 .habilidades-colum {
@@ -194,6 +212,7 @@
   text-align: center;
   width: max-content;
   margin-bottom: 2rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .contendor-foot {
@@ -314,6 +333,7 @@
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), 0px 3px 5px rgba(0, 0, 0, 0.2),
     3px 0px 5px rgba(0, 0, 0, 0.2), 3px 0px 5px rgba(0, 0, 0, 0.2);
 }
+
 .cuadrado-black {
   width: 25px;
   height: 25px;
@@ -342,10 +362,9 @@
   height: 160px;
   margin: auto;
   overflow: hidden;
-  width: 80%;
+  width: 100%;
   position: relative;
   margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 /* Degradado en los bordes */
@@ -366,6 +385,8 @@
   top: 0;
   width: 15%;
 }
+
+
 
 .slide-track {
   display: flex;
